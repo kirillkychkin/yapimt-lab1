@@ -6,6 +6,7 @@ namespace lab1
         {
             InitializeComponent();
         }
+        private GeometryCalculations geom = new GeometryCalculations();
 
         private string getAboutText()
         {
@@ -36,6 +37,11 @@ namespace lab1
         {
 
             MessageBox.Show("—умма чисел кратных семи от нул€ до тыс€чи: " + countMultiplesOfSeven());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(geom.getPointTriangleAnswer(triangleAX.Value, triangleAY.Value, triangleBX.Value, triangleBY.Value, triangleCX.Value, triangleCY.Value, pointX.Value, pointY.Value));
         }
     }
 }

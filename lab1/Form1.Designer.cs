@@ -136,6 +136,8 @@
             // triangleAX
             // 
             triangleAX.Location = new Point(48, 123);
+            triangleAX.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+            triangleAX.Minimum = new decimal(new int[] { 1000000, 0, 0, int.MinValue });
             triangleAX.Name = "triangleAX";
             triangleAX.Size = new Size(120, 23);
             triangleAX.TabIndex = 4;
@@ -170,6 +172,8 @@
             // triangleAY
             // 
             triangleAY.Location = new Point(215, 123);
+            triangleAY.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+            triangleAY.Minimum = new decimal(new int[] { 1000000, 0, 0, int.MinValue });
             triangleAY.Name = "triangleAY";
             triangleAY.Size = new Size(120, 23);
             triangleAY.TabIndex = 8;
@@ -195,6 +199,8 @@
             // triangleBX
             // 
             triangleBX.Location = new Point(48, 185);
+            triangleBX.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+            triangleBX.Minimum = new decimal(new int[] { 1000000, 0, 0, int.MinValue });
             triangleBX.Name = "triangleBX";
             triangleBX.Size = new Size(120, 23);
             triangleBX.TabIndex = 11;
@@ -211,6 +217,8 @@
             // triangleBY
             // 
             triangleBY.Location = new Point(215, 185);
+            triangleBY.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+            triangleBY.Minimum = new decimal(new int[] { 1000000, 0, 0, int.MinValue });
             triangleBY.Name = "triangleBY";
             triangleBY.Size = new Size(120, 23);
             triangleBY.TabIndex = 13;
@@ -236,6 +244,8 @@
             // triangleCX
             // 
             triangleCX.Location = new Point(48, 249);
+            triangleCX.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+            triangleCX.Minimum = new decimal(new int[] { 1000000, 0, 0, int.MinValue });
             triangleCX.Name = "triangleCX";
             triangleCX.Size = new Size(120, 23);
             triangleCX.TabIndex = 16;
@@ -252,6 +262,8 @@
             // triangleCY
             // 
             triangleCY.Location = new Point(215, 249);
+            triangleCY.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+            triangleCY.Minimum = new decimal(new int[] { 1000000, 0, 0, int.MinValue });
             triangleCY.Name = "triangleCY";
             triangleCY.Size = new Size(120, 23);
             triangleCY.TabIndex = 18;
@@ -277,6 +289,8 @@
             // pointX
             // 
             pointX.Location = new Point(48, 311);
+            pointX.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+            pointX.Minimum = new decimal(new int[] { 1000000, 0, 0, int.MinValue });
             pointX.Name = "pointX";
             pointX.Size = new Size(120, 23);
             pointX.TabIndex = 21;
@@ -293,6 +307,8 @@
             // pointY
             // 
             pointY.Location = new Point(215, 311);
+            pointY.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+            pointY.Minimum = new decimal(new int[] { 1000000, 0, 0, int.MinValue });
             pointY.Name = "pointY";
             pointY.Size = new Size(120, 23);
             pointY.TabIndex = 23;
@@ -305,6 +321,7 @@
             button2.TabIndex = 24;
             button2.Text = "Вычислить";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // Form1
             // 
@@ -336,9 +353,10 @@
             Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(menuStrip1);
+            ForeColor = SystemColors.ControlText;
             MainMenuStrip = menuStrip1;
             Name = "Form1";
-            Text = "Form1";
+            Text = "Лабораторная 1";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)triangleAX).EndInit();
