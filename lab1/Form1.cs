@@ -43,5 +43,10 @@ namespace lab1
         {
             MessageBox.Show(geom.getPointTriangleAnswer(triangleAX.Value, triangleAY.Value, triangleBX.Value, triangleBY.Value, triangleCX.Value, triangleCY.Value, pointX.Value, pointY.Value));
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("click buton");
+        }
     }
 }

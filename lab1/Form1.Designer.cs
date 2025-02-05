@@ -57,6 +57,8 @@
             label14 = new Label();
             pointY = new NumericUpDown();
             button2 = new Button();
+            label15 = new Label();
+            button3 = new Button();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)triangleAX).BeginInit();
             ((System.ComponentModel.ISupportInitialize)triangleAY).BeginInit();
@@ -81,7 +83,7 @@
             // 
             выходToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { выйтиИзПрограммыToolStripMenuItem });
             выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            выходToolStripMenuItem.Size = new Size(53, 20);
+            выходToolStripMenuItem.Size = new Size(54, 20);
             выходToolStripMenuItem.Text = "Выход";
             // 
             // выйтиИзПрограммыToolStripMenuItem
@@ -110,7 +112,7 @@
             label1.AutoSize = true;
             label1.Location = new Point(25, 43);
             label1.Name = "label1";
-            label1.Size = new Size(310, 15);
+            label1.Size = new Size(311, 15);
             label1.TabIndex = 1;
             label1.Text = "1. Найти сумму чисел кратных семи от нуля до тысячи";
             // 
@@ -129,7 +131,7 @@
             label2.AutoSize = true;
             label2.Location = new Point(25, 85);
             label2.Name = "label2";
-            label2.Size = new Size(586, 15);
+            label2.Size = new Size(587, 15);
             label2.TabIndex = 3;
             label2.Text = "2. По заданным координатам треугольника и точки вычислить, находится ли точка внутри треугольника";
             // 
@@ -147,7 +149,7 @@
             label3.AutoSize = true;
             label3.Location = new Point(24, 105);
             label3.Name = "label3";
-            label3.Size = new Size(129, 15);
+            label3.Size = new Size(128, 15);
             label3.TabIndex = 5;
             label3.Text = "Точка A треугольника";
             // 
@@ -183,7 +185,7 @@
             label6.AutoSize = true;
             label6.Location = new Point(25, 159);
             label6.Name = "label6";
-            label6.Size = new Size(128, 15);
+            label6.Size = new Size(127, 15);
             label6.TabIndex = 9;
             label6.Text = "Точка B треугольника";
             // 
@@ -228,7 +230,7 @@
             label9.AutoSize = true;
             label9.Location = new Point(25, 223);
             label9.Name = "label9";
-            label9.Size = new Size(129, 15);
+            label9.Size = new Size(128, 15);
             label9.TabIndex = 14;
             label9.Text = "Точка C треугольника";
             // 
@@ -323,11 +325,32 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(25, 378);
+            label15.Name = "label15";
+            label15.Size = new Size(298, 15);
+            label15.TabIndex = 25;
+            label15.Text = "3.  Найти и вывести максимальное количество тезок";
+            // 
+            // button3
+            // 
+            button3.Location = new Point(29, 405);
+            button3.Name = "button3";
+            button3.Size = new Size(106, 23);
+            button3.TabIndex = 26;
+            button3.Text = "Найти тезок";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button3);
+            Controls.Add(label15);
             Controls.Add(button2);
             Controls.Add(pointY);
             Controls.Add(label14);
@@ -402,5 +425,7 @@
         private Label label14;
         private NumericUpDown pointY;
         private Button button2;
+        private Label label15;
+        private Button button3;
     }
 }
